@@ -18,20 +18,9 @@
         }
         .custom-shadow { box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05); }
         
-        /* Styling khas untuk logo baru anda */
-        .custom-logo {
-            height: 150px; 
-            width: auto;
-            object-fit: contain;
-        }
-        .custom-logo-footer {
-            height: 150px;
-            width: auto;
-            filter: brightness(0) invert(1); 
-            object-fit: contain;
-        }
+        .custom-logo { height: 150px; width: auto; object-fit: contain; }
+        .custom-logo-footer { height: 150px; width: auto; filter: brightness(0) invert(1); object-fit: contain; }
 
-        /* WARNA TAMBAHAN UNTUK DASHBOARD */
         .card-purple { background-color: #f5f3ff; border: 1px solid #ede9fe; }
         .card-blue { background-color: #eff6ff; border: 1px solid #dbeafe; }
         .card-pink { background-color: #fff1f2; border: 1px solid #ffe4e6; }
@@ -50,10 +39,10 @@
             <a href="#" class="hover:text-purple-600">About</a>
         </div>
         <div class="flex items-center gap-6">
-            <a href="#login" class="font-semibold text-purple-600">Log In</a>
-            <button class="bg-purple-brand text-white px-6 py-2.5 rounded-xl font-bold hover:opacity-90 transition shadow-lg shadow-purple-200">
+            <a href="#login-section" class="font-semibold text-purple-600">Log In</a>
+            <a href="#signup-section" class="bg-purple-brand text-white px-6 py-2.5 rounded-xl font-bold hover:opacity-90 transition shadow-lg shadow-purple-200">
                 Start Free Trial
-            </button>
+            </a>
         </div>
     </nav>
 
@@ -106,48 +95,68 @@
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-youtube"></i>
                 </div>
                 <span class="text-gray-400 text-xs font-bold">Connect all platforms</span>
             </div>
         </div>
     </section>
 
-    <section class="bg-purple-brand py-20">
+    <section class="bg-purple-brand py-16">
         <div class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12 text-center text-white">
-            <div><div class="text-5xl font-extrabold mb-2">50K+</div><div class="opacity-80 font-medium">Active Users</div></div>
-            <div><div class="text-5xl font-extrabold mb-2">2M+</div><div class="opacity-80 font-medium">Posts Analyzed</div></div>
-            <div><div class="text-5xl font-extrabold mb-2">99.9%</div><div class="opacity-80 font-medium">Uptime</div></div>
-            <div><div class="text-5xl font-extrabold mb-2">24/7</div><div class="opacity-80 font-medium">Support</div></div>
+            <div><div class="text-4xl font-extrabold mb-1">50K+</div><div class="text-sm opacity-80">Active Users</div></div>
+            <div><div class="text-4xl font-extrabold mb-1">2M+</div><div class="text-sm opacity-80">Posts Analyzed</div></div>
+            <div><div class="text-4xl font-extrabold mb-1">99.9%</div><div class="text-sm opacity-80">Uptime</div></div>
+            <div><div class="text-4xl font-extrabold mb-1">24/7</div><div class="text-sm opacity-80">Support</div></div>
         </div>
     </section>
 
     <section id="features" class="py-24 max-w-7xl mx-auto px-8">
-        <div class="text-center mb-20">
+        <div class="text-center mb-16">
             <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Everything You Need</h2>
             <p class="text-gray-500">Powerful features to help you understand and grow your social media presence</p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-10 border border-gray-100 rounded-[32px] hover:border-purple-200 transition group bg-white">
-                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-purple-600 group-hover:text-white transition">
-                    <i class="fa-solid fa-chart-simple text-xl"></i>
+            <div class="p-8 border border-gray-100 rounded-[32px] bg-white custom-shadow">
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-chart-line text-xl"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-4">Advanced Analytics</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Get deep insights into your performance with comprehensive analytics and reports.</p>
+                <h3 class="text-xl font-bold mb-3">Advanced Analytics</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Get deep insights into your social media performance with comprehensive analytics and reports.</p>
             </div>
-            <div class="p-10 border border-gray-100 rounded-[32px] hover:border-purple-200 transition group bg-white">
-                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-purple-600 group-hover:text-white transition">
+            <div class="p-8 border border-gray-100 rounded-[32px] bg-white custom-shadow">
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
                     <i class="fa-solid fa-users text-xl"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-4">Audience Insights</h3>
+                <h3 class="text-xl font-bold mb-3">Audience Insights</h3>
                 <p class="text-gray-500 text-sm leading-relaxed">Understand your audience better with detailed demographic and behavioral data.</p>
             </div>
-            <div class="p-10 border border-gray-100 rounded-[32px] hover:border-purple-200 transition group bg-white">
-                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-purple-600 group-hover:text-white transition">
+            <div class="p-8 border border-gray-100 rounded-[32px] bg-white custom-shadow">
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
                     <i class="fa-solid fa-arrow-trend-up text-xl"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-4">Growth Tracking</h3>
+                <h3 class="text-xl font-bold mb-3">Growth Tracking</h3>
                 <p class="text-gray-500 text-sm leading-relaxed">Monitor your follower growth and engagement metrics across all platforms.</p>
+            </div>
+            <div class="p-8 border border-gray-100 rounded-[32px] bg-white custom-shadow">
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-bolt text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Real-time Updates</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Get instant notifications and updates on your social media performance.</p>
+            </div>
+            <div class="p-8 border border-gray-100 rounded-[32px] bg-white custom-shadow">
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-shield-halved text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Secure & Private</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Your data is encrypted and secure. We never share your information.</p>
+            </div>
+            <div class="p-8 border border-gray-100 rounded-[32px] bg-white custom-shadow">
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-bullseye text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Campaign Tracking</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Track the performance of your marketing campaigns across multiple channels.</p>
             </div>
         </div>
     </section>
@@ -176,7 +185,7 @@
                 <button class="w-full py-4 bg-purple-brand text-white font-bold rounded-xl mb-10 shadow-lg">Start Free Trial</button>
                 <ul class="space-y-4 text-gray-600 text-sm font-medium">
                     <li><i class="fa-solid fa-check text-green-500 mr-3"></i> Multiple social platforms</li>
-                    <li><i class="fa-solid fa-check text-green-500 mr-3"></i> Compare performance</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-3"></i> Compare platform performance</li>
                     <li><i class="fa-solid fa-check text-green-500 mr-3"></i> Real-time updates</li>
                 </ul>
             </div>
@@ -186,70 +195,164 @@
                 <div class="mb-10"><span class="text-5xl font-extrabold">RM190</span><span class="text-gray-400">/user/month</span></div>
                 <button class="w-full py-4 bg-purple-50 text-purple-600 font-bold rounded-xl mb-10">Start Free Trial</button>
                 <ul class="space-y-4 text-gray-600 text-sm font-medium">
-                    <li><i class="fa-solid fa-check text-green-500 mr-3"></i> AI-guided decisions</li>
-                    <li><i class="fa-solid fa-check text-green-500 mr-3"></i> Content suggestions</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-3"></i> All access subscriptions</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-3"></i> AI-guided marketing decisions</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-3"></i> Content engagement suggestions</li>
                 </ul>
             </div>
         </div>
     </section>
 
+    <section class="bg-purple-brand py-20 text-center text-white px-8">
+        <h2 class="text-4xl font-extrabold mb-6">Ready to Grow Your Social Media?</h2>
+        <p class="opacity-90 mb-10 max-w-2xl mx-auto text-lg">Join thousands of marketers who use Sociallytic to track and improve their social media performance.</p>
+        <button class="bg-white text-purple-600 px-10 py-4 rounded-xl font-bold text-lg hover:scale-105 transition shadow-2xl">
+            Start Your Free Trial <i class="fa-solid fa-arrow-right ml-2"></i>
+        </button>
+    </section>
+
     <footer class="bg-[#0b1120] text-white pt-24 pb-12 px-8">
         <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 border-b border-slate-800 pb-16 mb-10">
             <div class="col-span-2 md:col-span-1">
-                <div class="flex items-center gap-2 mb-8">
-                    <img src="logo sociallytics.jpg" alt="Sociallytic Logo" class="custom-logo-footer">
-                </div>
+                <img src="logo sociallytics.jpg" alt="Sociallytic Logo" class="custom-logo-footer mb-8">
                 <p class="text-slate-400 text-sm leading-relaxed">The ultimate social media analytics platform for modern marketers.</p>
             </div>
-            <div><h4 class="font-bold text-xs uppercase tracking-widest text-slate-500 mb-8">Product</h4><ul class="space-y-4 text-slate-400 text-sm"><li>Features</li><li>Pricing</li><li>Roadmap</li></ul></div>
-            <div><h4 class="font-bold text-xs uppercase tracking-widest text-slate-500 mb-8">Company</h4><ul class="space-y-4 text-slate-400 text-sm"><li>About</li><li>Blog</li><li>Contact</li></ul></div>
-            <div><h4 class="font-bold text-xs uppercase tracking-widest text-slate-500 mb-8">Legal</h4><ul class="space-y-4 text-slate-400 text-sm"><li>Privacy</li><li>Terms</li><li>Security</li></ul></div>
+            <div><h4 class="font-bold text-xs uppercase tracking-widest text-slate-500 mb-8">Product</h4><ul class="space-y-4 text-slate-400 text-sm"><li>Features</li><li>Pricing</li><li>Security</li><li>Roadmap</li></ul></div>
+            <div><h4 class="font-bold text-xs uppercase tracking-widest text-slate-500 mb-8">Company</h4><ul class="space-y-4 text-slate-400 text-sm"><li>About</li><li>Blog</li><li>Careers</li><li>Contact</li></ul></div>
+            <div><h4 class="font-bold text-xs uppercase tracking-widest text-slate-500 mb-8">Legal</h4><ul class="space-y-4 text-slate-400 text-sm"><li>Privacy</li><li>Terms</li><li>Security</li><li>Compliance</li></ul></div>
         </div>
         <div class="max-w-7xl mx-auto flex justify-between items-center text-slate-500 text-xs">
             <p>© 2026 Sociallytic. All rights reserved.</p>
-            <div class="flex gap-6 text-lg"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook"></i></div>
+            <div class="flex gap-6 text-lg">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
         </div>
     </footer>
 
-    <hr class="border-gray-100 my-20">
-
-    <section id="login" class="max-w-7xl mx-auto px-8 py-20 grid lg:grid-cols-2 gap-20 items-center">
-        <div class="p-12 border border-gray-100 rounded-[40px] custom-shadow bg-white">
-            <div class="flex items-center gap-2 mb-10">
-                <img src="logo sociallytics.jpg" alt="Sociallytic Logo" class="h-150 w-150">
-            </div>
-            <h2 class="text-3xl font-extrabold mb-2">Welcome back</h2>
+    <section id="login-section" class="min-h-screen grid lg:grid-cols-2">
+        <div class="flex flex-col justify-center px-12 lg:px-24 py-20 bg-white">
+            <img src="logo sociallytics.jpg" alt="Logo" class="h-150 w-fit mb-12">
+            <h2 class="text-4xl font-extrabold mb-2">Welcome back</h2>
             <p class="text-gray-500 mb-10">Sign in to your account to continue</p>
+            
             <form class="space-y-5">
                 <button type="button" class="w-full py-4 border border-gray-200 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-gray-50"><img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5"> Continue with Google</button>
                 <button type="button" class="w-full py-4 border border-gray-200 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-gray-50"><i class="fa-brands fa-facebook text-blue-600 text-xl"></i> Continue with Facebook</button>
-                <div class="text-center text-gray-400 text-xs font-bold py-2">OR</div>
-                <div><label class="block text-sm font-bold mb-2">Email address</label><input type="email" placeholder="Enter your email" class="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl outline-none focus:border-purple-500"></div>
-                <div><label class="block text-sm font-bold mb-2">Password</label><input type="password" placeholder="Enter your password" class="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl outline-none focus:border-purple-500"></div>
-                <div class="flex justify-between items-center text-sm font-medium"><label class="flex items-center gap-2"><input type="checkbox" class="accent-purple-600"> Remember me</label><a href="#" class="text-purple-600">Forgot password?</a></div>
+                
+                <div class="relative py-4 text-center">
+                    <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gray-100"></div></div>
+                    <span class="relative bg-white px-4 text-xs font-bold text-gray-400 uppercase">or</span>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">Email address</label>
+                    <input type="email" placeholder="Enter your email" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-purple-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2">Password</label>
+                    <input type="password" placeholder="Enter your password" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-purple-500">
+                </div>
+                
+                <div class="flex justify-between items-center text-sm font-medium">
+                    <label class="flex items-center gap-2"><input type="checkbox" class="accent-purple-600"> Remember me</label>
+                    <a href="#" class="text-purple-600">Forgot password?</a>
+                </div>
+                
                 <button class="w-full bg-purple-brand text-white py-4 rounded-xl font-bold text-lg shadow-xl shadow-purple-100">Sign in <i class="fa-solid fa-arrow-right ml-2"></i></button>
             </form>
-            <p class="text-center mt-8 text-sm text-gray-500 font-medium">Don't have an account? <a href="#create" class="text-purple-600 font-bold">Sign up for free</a></p>
+            <p class="text-center mt-8 text-sm text-gray-500">Don't have an account? <a href="#signup-section" class="text-purple-600 font-bold">Sign up for free</a></p>
         </div>
 
-        <div id="create" class="bg-purple-brand text-white p-16 rounded-[40px] relative overflow-hidden">
-            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-1.5 rounded-full text-xs font-bold mb-8 border border-white/10">Trusted by 50,000+ users</div>
+        <div class="hidden lg:flex flex-col justify-center bg-purple-brand text-white px-20">
+            <div class="inline-flex w-fit items-center gap-2 bg-white/10 backdrop-blur px-4 py-1.5 rounded-full text-xs font-bold mb-8">Trusted by 50,000+ users</div>
             <h2 class="text-5xl font-extrabold leading-tight mb-8">Track Your Social Media Performance Like Never Before</h2>
+            <p class="text-purple-100 mb-12 text-lg">Get powerful insights, track engagement, and grow your audience across all social platforms in one unified dashboard.</p>
+            
             <div class="space-y-6">
-                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 flex items-center gap-4">
-                    <div class="w-10 h-10 bg-purple-400/20 rounded-lg flex items-center justify-center"><i class="fa-solid fa-chart-line"></i></div>
-                    <div><h4 class="font-bold">Real-time Analytics</h4><p class="text-purple-100 text-xs">Monitor performance with live data updates</p></div>
+                <div class="bg-white/10 p-6 rounded-2xl border border-white/10 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-purple-400/30 rounded-lg flex items-center justify-center text-xl"><i class="fa-solid fa-chart-line"></i></div>
+                    <div><h4 class="font-bold">Real-time Analytics</h4><p class="text-purple-100 text-sm">Monitor your performance with live data updates</p></div>
                 </div>
-                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 flex items-center gap-4">
-                    <div class="w-10 h-10 bg-purple-400/20 rounded-lg flex items-center justify-center"><i class="fa-solid fa-mobile-screen"></i></div>
-                    <div><h4 class="font-bold">Multi-Platform Support</h4><p class="text-purple-100 text-xs">Connect Instagram, Twitter, Facebook, and more</p></div>
+                <div class="bg-white/10 p-6 rounded-2xl border border-white/10 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-purple-400/30 rounded-lg flex items-center justify-center text-xl"><i class="fa-solid fa-layer-group"></i></div>
+                    <div><h4 class="font-bold">Multi-Platform Support</h4><p class="text-purple-100 text-sm">Connect Instagram, Twitter, Facebook, and more</p></div>
                 </div>
-                <div class="bg-white/5 p-6 rounded-3xl border border-white/10 p-8">
-                   <p class="text-lg italic mb-6">"Sociallytic transformed how we manage our social media. The insights are invaluable!"</p>
-                   <div class="flex items-center gap-4">
-                       <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
-                       <div><h4 class="font-bold">Sarah Johnson</h4><p class="text-purple-200 text-xs">Marketing Director, TechCorp</p></div>
-                   </div>
+                <div class="bg-white/10 p-6 rounded-2xl border border-white/10 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-purple-400/30 rounded-lg flex items-center justify-center text-xl"><i class="fa-solid fa-bolt"></i></div>
+                    <div><h4 class="font-bold">AI-Powered Insights</h4><p class="text-purple-100 text-sm">Get smart recommendations to improve engagement</p></div>
+                </div>
+            </div>
+
+            <div class="mt-12 p-8 bg-white/10 rounded-3xl border border-white/10">
+                <p class="text-lg italic mb-4">"Sociallytic transformed how we manage our social media. The insights are invaluable and the interface is so intuitive!"</p>
+                </div>
+        </div>
+    </section>
+
+    <section id="signup-section" class="min-h-screen grid lg:grid-cols-2">
+        <div class="flex flex-col justify-center px-12 lg:px-24 py-20 bg-white">
+            <img src="logo sociallytics.jpg" alt="Logo" class="h-150 w-fit mb-150">
+            <h2 class="text-4xl font-extrabold mb-2">Create your account</h2>
+            <p class="text-gray-500 mb-10">Get started with your free trial today</p>
+            
+            <form class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <button type="button" class="py-4 border border-gray-200 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-gray-50"><img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5"> Google</button>
+                    <button type="button" class="py-4 border border-gray-200 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-gray-50"><i class="fa-brands fa-facebook text-blue-600 text-xl"></i> Facebook</button>
+                </div>
+                
+                <div class="relative py-4 text-center">
+                    <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gray-100"></div></div>
+                    <span class="relative bg-white px-4 text-xs font-bold text-gray-400 uppercase">or</span>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">Full Name</label>
+                    <input type="text" placeholder="Enter your full name" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-purple-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2">Email address</label>
+                    <input type="email" placeholder="Enter your email" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-purple-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2">Password</label>
+                    <input type="password" placeholder="Create a password" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-purple-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2">Confirm Password</label>
+                    <input type="password" placeholder="Confirm your password" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-purple-500">
+                </div>
+                
+                <label class="flex items-start gap-3 text-sm text-gray-500 py-2">
+                    <input type="checkbox" class="mt-1 accent-purple-600">
+                    <span>I agree to the <a href="#" class="text-purple-600 underline">Terms of Service</a> and <a href="#" class="text-purple-600 underline">Privacy Policy</a></span>
+                </label>
+                
+                <button class="w-full bg-purple-brand text-white py-4 rounded-xl font-bold text-lg shadow-xl">Create Account <i class="fa-solid fa-arrow-right ml-2"></i></button>
+            </form>
+            <p class="text-center mt-8 text-sm text-gray-500">Already have an account? <a href="#login-section" class="text-purple-600 font-bold">Sign in</a></p>
+        </div>
+
+        <div class="hidden lg:flex flex-col justify-center bg-purple-brand text-white px-20 relative overflow-hidden">
+            <div class="z-10">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-1.5 rounded-full text-xs font-bold mb-8">Join 50,000+ marketers</div>
+                <h2 class="text-5xl font-extrabold leading-tight mb-8">Start Your Free 14-Day Trial Today</h2>
+                <p class="text-purple-100 mb-12 text-lg">No credit card required. Get instant access to all features and start growing your social media presence.</p>
+                
+                <ul class="space-y-6 mb-12">
+                    <li class="flex items-center gap-4"><i class="fa-solid fa-circle-check text-2xl"></i> Connect unlimited social media accounts</li>
+                    <li class="flex items-center gap-4"><i class="fa-solid fa-circle-check text-2xl"></i> AI-powered insights and recommendations</li>
+                    <li class="flex items-center gap-4"><i class="fa-solid fa-circle-check text-2xl"></i> Real-time analytics and performance tracking</li>
+                    <li class="flex items-center gap-4"><i class="fa-solid fa-circle-check text-2xl"></i> 24/7 customer support</li>
+                </ul>
+
+                <div class="grid grid-cols-3 gap-8 pt-10 border-t border-white/10 text-center">
+                    <div><div class="text-3xl font-extrabold">50K+</div><div class="text-[10px] uppercase tracking-widest opacity-70">Active Users</div></div>
+                    <div><div class="text-3xl font-extrabold">2M+</div><div class="text-[10px] uppercase tracking-widest opacity-70">Posts Tracked</div></div>
+                    <div><div class="text-3xl font-extrabold">99.9%</div><div class="text-[10px] uppercase tracking-widest opacity-70">Uptime</div></div>
                 </div>
             </div>
         </div>
