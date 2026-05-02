@@ -20,16 +20,22 @@
         
         /* Styling khas untuk logo baru anda */
         .custom-logo {
-            height: 150px; /* Saiz yang sesuai supaya jelas */
+            height: 150px; 
             width: auto;
             object-fit: contain;
         }
         .custom-logo-footer {
             height: 150px;
             width: auto;
-            filter: brightness(0) invert(1); /* Jadikan logo putih untuk background gelap */
+            filter: brightness(0) invert(1); 
             object-fit: contain;
         }
+
+        /* WARNA TAMBAHAN UNTUK DASHBOARD */
+        .card-purple { background-color: #f5f3ff; border: 1px solid #ede9fe; }
+        .card-blue { background-color: #eff6ff; border: 1px solid #dbeafe; }
+        .card-pink { background-color: #fff1f2; border: 1px solid #ffe4e6; }
+        .card-green { background-color: #f0fdf4; border: 1px solid #dcfce7; }
     </style>
 </head>
 <body class="bg-white text-slate-900">
@@ -74,25 +80,25 @@
 
         <div class="bg-white rounded-[40px] p-10 border border-gray-100 custom-shadow">
             <div class="grid grid-cols-2 gap-6 mb-8">
-                <div class="bg-purple-50/50 p-6 rounded-3xl border border-purple-50">
+                <div class="card-purple p-6 rounded-3xl">
                     <i class="fa-regular fa-eye text-purple-500 text-xl mb-4 block"></i>
                     <div class="text-3xl font-extrabold">892.4K</div>
-                    <div class="text-gray-400 text-xs mt-1 text-center">Total Views</div>
+                    <div class="text-gray-400 text-xs mt-1">Total Views</div>
                 </div>
-                <div class="bg-blue-50/50 p-6 rounded-3xl border border-blue-50">
+                <div class="card-blue p-6 rounded-3xl">
                     <i class="fa-solid fa-users text-blue-500 text-xl mb-4 block"></i>
                     <div class="text-3xl font-extrabold">125.8K</div>
-                    <div class="text-gray-400 text-xs mt-1 text-center">Followers</div>
+                    <div class="text-gray-400 text-xs mt-1">Followers</div>
                 </div>
-                <div class="bg-pink-50/50 p-6 rounded-3xl border border-pink-50">
+                <div class="card-pink p-6 rounded-3xl">
                     <i class="fa-regular fa-comment text-pink-500 text-xl mb-4 block"></i>
                     <div class="text-3xl font-extrabold">48.2K</div>
-                    <div class="text-gray-400 text-xs mt-1 text-center">Engagement</div>
+                    <div class="text-gray-400 text-xs mt-1">Engagement</div>
                 </div>
-                <div class="bg-green-50/50 p-6 rounded-3xl border border-green-50">
+                <div class="card-green p-6 rounded-3xl">
                     <i class="fa-solid fa-arrow-trend-up text-green-500 text-xl mb-4 block"></i>
-                    <div class="text-3xl font-extrabold">+24.5%</div>
-                    <div class="text-gray-400 text-xs mt-1 text-center">Growth</div>
+                    <div class="text-3xl font-extrabold text-green-600">+24.5%</div>
+                    <div class="text-gray-400 text-xs mt-1">Growth</div>
                 </div>
             </div>
             <div class="pt-6 border-t border-gray-100 flex items-center justify-center gap-6">
@@ -100,6 +106,7 @@
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
                 </div>
                 <span class="text-gray-400 text-xs font-bold">Connect all platforms</span>
             </div>
